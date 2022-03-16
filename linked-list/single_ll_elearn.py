@@ -1,4 +1,4 @@
-# Linked List and Node can be accomodated in separate classes for convenience
+# Single Linked List, terdapat 2 class: Node, LinkedList
 class Node(object):
     # Each node has its data and a pointer that points to next node in the Linked List
     def __init__(self, data, next = None):
@@ -125,6 +125,8 @@ class LinkedList(object):
         return self.search(node.getNext(), data)
             
 if __name__ == '__main__':
+    print("original code: https://github.com/OmkarPathak/Data-Structures-using-Python/blob/master/Linked%20Lists/SinglyLinkedList.py")
+    print("modified by Daffa Arviano (github.com/drdofx)\n")
     List = LinkedList()
     
     def printMenu():
@@ -156,6 +158,7 @@ if __name__ == '__main__':
             print('End')
             return 
 
-        return insertMenu()
+        return insertMenu() # recursive function call selama pilihan bukan 1 sampai 4
 
+    # call function menu pertama saat script di-run
     insertMenu()

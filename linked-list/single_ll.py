@@ -131,6 +131,8 @@ class LinkedList(object):
         return self.search(node.getNext(), data)
             
 if __name__ == '__main__':
+    print("original code: https://github.com/OmkarPathak/Data-Structures-using-Python/blob/master/Linked%20Lists/SinglyLinkedList.py")
+    print("modified by Daffa Arviano (github.com/drdofx)\n")
     List = LinkedList()
     
     def printMenu():
