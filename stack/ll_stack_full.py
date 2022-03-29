@@ -1,3 +1,15 @@
+'''
+Group 1 - Struktur Data
+
+> Stack with Linked List Implementation + Infix to Postfix and Prefix Conversion Program in Python 3
+
+References:
+https://gist.github.com/awadalaa/7ef7dc7e41edb501d44d1ba41cbf0dc6
+https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/
+
+Compiled and modified by Daffa Arviano (github.com/drdofx)
+'''
+
 # Implement a stack with linked list with Python 3
 class Node:
     def __init__(self, data):
