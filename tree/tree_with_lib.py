@@ -1,26 +1,26 @@
 from binarytree import tree, bst, Node
 
-my_tree = tree(height=3, is_perfect=True, letters=True)
-my_bst = bst(height=3, is_perfect=False)
+# my_tree = tree(height=3, is_perfect=True, letters=True)
+# my_bst = bst(height=3, is_perfect=False)
 
-print(my_tree)
-print(my_bst)
+# print(my_tree)
+# print(my_bst)
 
-root = Node(4)
-root.left = Node(2)
-root.left.right = Node(5)
-root.left.left = Node(7)
-root.right = Node(9)
-root.right.left = Node(1)
-root.right.right = Node(3)
+root = Node("D")
+root.left = Node("B")
+root.left.left = Node("A")
+root.left.right = Node("C")
+root.right = Node("F")
+root.right.left = Node("E")
+root.right.right = Node("G")
 
 print(root)
 
 prop = root.properties
 
-print(prop)
+# print(prop)
 
-print(root.inorder)
-print(root.preorder)
-print(root.postorder)
-print(root.levelorder)
+print("Inorder traversal: " + str(root.inorder))
+print("Preorder traversal: " + str(root.preorder))
+print("Postorder traversal: " + str(root.postorder))
+# print(root.levelorder)
