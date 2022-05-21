@@ -102,5 +102,6 @@ if __name__ == "__main__":
         else:
             break
         input("\nEnter any key to continue...")
+        clear_terminal()
     print("\nExit!")
 
