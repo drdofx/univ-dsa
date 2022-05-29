@@ -6,10 +6,10 @@ from binarytree import tree, bst, Node
 # print(my_tree)
 # print(my_bst)
 
-root = Node("D")
+root = Node("A")
 root.left = Node("B")
-root.left.left = Node("A")
-root.left.right = Node("C")
+root.left.left = Node("E")
+root.left.right = Node("F")
 root.right = Node("F")
 root.right.left = Node("E")
 root.right.right = Node("G")
