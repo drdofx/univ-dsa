@@ -30,6 +30,10 @@ class Queue:
         self.count += 1
 
     def dequeue(self):
+        if self.is_empty():
+            print("Queue is empty")
+            return
+
         if self.count == 1:
             temp = self.head
             self.count -= 1
