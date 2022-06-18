@@ -1,4 +1,6 @@
-# Binary Search Tree operations in Python
+""" 
+Binary Search Tree operations in Python - https://www.programiz.com/dsa/binary-search-tree
+"""
 
 # Create a node
 class Node:
@@ -7,6 +9,18 @@ class Node:
         self.left = None
         self.right = None
 
+# Searching a node
+def search(root, key):
+    if root is None:
+        return "Tidak ditemukan"
+
+    if root.key == key:
+        return "Ditemukan"
+
+    if key < root.key:
+        return search(root.left, key)
+    else:
+        return search(root.right, key)
 
 # Inorder traversal
 def inorder(root):
@@ -98,20 +112,15 @@ def deleteNode(root, key):
 
 
 root = None
-# root = insert(root, 8)
-# root = insert(root, 3)
-# root = insert(root, 1)
-# root = insert(root, 6)
-# root = insert(root, 7)
-# root = insert(root, 10)
-# root = insert(root, 4)
-root = insert(root, "D")
-root = insert(root, "B")
-root = insert(root, "F")
-root = insert(root, "A")
-root = insert(root, "C")
-root = insert(root, "E")
-root = insert(root, "G")
+root = insert(root, 8)
+root = insert(root, 3)
+root = insert(root, 10)
+root = insert(root, 1)
+root = insert(root, 6)
+root = insert(root, 14)
+root = insert(root, 4)
+root = insert(root, 7)
+root = insert(root, 13)
 
 print("Inorder traversal: ", end=' ')
 inorder(root)
@@ -122,6 +131,14 @@ preorder(root)
 print("\nPostorder traversal: ", end=' ')
 postorder(root)
 
+print()
+
+# For searching a node (final exam practice)
+print("\nSearching for key 6: ", end=' ')
+print(search(root, 6))
+
+print("\nSearching for key 11: ", end=' ')
+print(search(root, 11))
 # print("\nDelete 10")
 # root = deleteNode(root, 10)
 # print("Inorder traversal: ", end=' ')
